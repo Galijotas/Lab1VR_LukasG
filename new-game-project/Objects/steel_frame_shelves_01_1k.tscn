@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d6d5wmi2bspp"]
+
+[ext_resource type="PackedScene" uid="uid://dcbtujtaj7w7k" path="res://Objects/steel_frame_shelves_01_1k.gltf" id="1_01qqy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xtm4j"]
+albedo_color = Color(0.259294, 0.259294, 0.259294, 1)
+
+[node name="steel_frame_shelves_01_1k" instance=ExtResource("1_01qqy")]
+
+[node name="steel_frame_shelves_01" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_xtm4j")

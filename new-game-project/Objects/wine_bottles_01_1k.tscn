@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://bbdnh61p0wuql"]
+
+[ext_resource type="PackedScene" uid="uid://cid5g2e48iyb3" path="res://Objects/wine_bottles_01_1k.gltf" id="1_ankij"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sqbd5"]
+albedo_color = Color(0.428093, 0.0290355, 2.40654e-08, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ubugb"]
+albedo_color = Color(0.37563, 0.60955, 0.853, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dfqv3"]
+albedo_color = Color(0.443815, 0.443408, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kyqny"]
+albedo_color = Color(0.197937, 0.197937, 0.197937, 1)
+
+[node name="wine_bottles_01_1k" instance=ExtResource("1_ankij")]
+
+[node name="wine_bottles_01_bordeaux" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_sqbd5")
+surface_material_override/1 = SubResource("StandardMaterial3D_sqbd5")
+surface_material_override/2 = SubResource("StandardMaterial3D_sqbd5")
+surface_material_override/3 = SubResource("StandardMaterial3D_sqbd5")
+
+[node name="wine_bottles_01_alsace" parent="." index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ubugb")
+surface_material_override/1 = SubResource("StandardMaterial3D_ubugb")
+surface_material_override/2 = SubResource("StandardMaterial3D_ubugb")
+surface_material_override/3 = SubResource("StandardMaterial3D_ubugb")
+
+[node name="wine_bottles_01_burgundy" parent="." index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_dfqv3")
+surface_material_override/1 = SubResource("StandardMaterial3D_dfqv3")
+surface_material_override/2 = SubResource("StandardMaterial3D_dfqv3")
+surface_material_override/3 = SubResource("StandardMaterial3D_dfqv3")
+
+[node name="wine_bottles_01_champagne" parent="." index="3"]
+surface_material_override/0 = SubResource("StandardMaterial3D_kyqny")
+surface_material_override/1 = SubResource("StandardMaterial3D_kyqny")
+surface_material_override/2 = SubResource("StandardMaterial3D_kyqny")
+surface_material_override/3 = SubResource("StandardMaterial3D_kyqny")

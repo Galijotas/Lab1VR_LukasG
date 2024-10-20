@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://vdao15k3o4bf"]
+[gd_scene load_steps=82 format=3 uid="uid://vdao15k3o4bf"]
 
 [ext_resource type="Texture2D" uid="uid://cwupny5xys8b5" path="res://textures/TCom_Pavement_Terrazzo2_4K_albedo.jpg" id="1_hobvs"]
 [ext_resource type="Texture2D" uid="uid://oxxey2j5p74h" path="res://textures/TCom_Pavement_Terrazzo2_4K_normal.jpg" id="2_t871c"]
@@ -8,6 +8,14 @@
 [ext_resource type="ArrayMesh" uid="uid://b672q83yptb5d" path="res://Objects/uploads_files_5414124_Table.obj" id="6_tkh0q"]
 [ext_resource type="ArrayMesh" uid="uid://8xisftjybn1" path="res://Objects/GAIA_Leather_armchair_mg12_.obj" id="7_hy10v"]
 [ext_resource type="ArrayMesh" uid="uid://cfl4kt06u0sks" path="res://Objects/uploads_files_4624157_Glass+and+Bottle.obj" id="8_o2kie"]
+[ext_resource type="ArrayMesh" uid="uid://bl1tk87qs228w" path="res://Objects/BarTable.obj" id="9_sbb7e"]
+[ext_resource type="Texture2D" uid="uid://ddehmtdiy3eyd" path="res://textures/Altin_mese.jpg" id="10_kb4wy"]
+[ext_resource type="ArrayMesh" uid="uid://btqjhm32ocgdh" path="res://Objects/3d-model.obj" id="11_ssgyd"]
+[ext_resource type="PackedScene" uid="uid://d6d5wmi2bspp" path="res://Objects/steel_frame_shelves_01_1k.tscn" id="12_b3hev"]
+[ext_resource type="PackedScene" uid="uid://bbdnh61p0wuql" path="res://Objects/wine_bottles_01_1k.tscn" id="13_3cy48"]
+[ext_resource type="PackedScene" uid="uid://btmx2tovrtjj7" path="res://Objects/CuttingBoard.tscn" id="14_kmavj"]
+[ext_resource type="PackedScene" uid="uid://c7rya4u5dn4rj" path="res://Objects/lemon_1k.tscn" id="15_odym1"]
+[ext_resource type="PackedScene" uid="uid://ojg28u2dcx1r" path="res://Objects/Onion.tscn" id="16_1mwyu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8yjr7"]
 albedo_texture = ExtResource("1_hobvs")
@@ -182,6 +190,54 @@ albedo_color = Color(0.470689, 0.319228, 0.292034, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_66gm3"]
 albedo_color = Color(0.0958469, 0.327173, 0.00590425, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4rbme"]
+albedo_texture = ExtResource("10_kb4wy")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ehjax"]
+size = Vector3(0.608643, 0.0380249, 0.997681)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wg545"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2p3vw"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bmsvg"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vg8ou"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cp2k0"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6uqeh"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gnnpc"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ixh7"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kmtp5"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ph0oc"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fwnfs"]
+albedo_color = Color(0.295867, 0.295866, 0.295866, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dx3pc"]
+size = Vector3(1524.54, 882.542, 986.133)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6q2jk"]
+size = Vector3(11.1049, 21.3755, 5.05511)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eib60"]
+size = Vector3(0.682045, 0.32962, 0.0800781)
 
 [node name="Node3D" type="Node3D"]
 
@@ -438,7 +494,7 @@ surface_material_override/1 = SubResource("StandardMaterial3D_gqrdr")
 transform = Transform3D(0.208304, 0, 0.978064, 0, 1, 0, -0.978064, 0, 0.208304, 1.92225, 0.631769, -2.56698)
 shape = SubResource("BoxShape3D_2pmlv")
 
-[node name="UploadsFiles4624157Glass+and+bottle" type="MeshInstance3D" parent="."]
+[node name="wine" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.000392694, 0, -0.0999992, 0, 0.1, 0, 0.0999992, 0, 0.000392694, 2.93027, 0.851345, -1.67982)
 mesh = ExtResource("8_o2kie")
 surface_material_override/0 = SubResource("StandardMaterial3D_y8inq")
@@ -449,3 +505,62 @@ surface_material_override/4 = SubResource("StandardMaterial3D_bcr10")
 surface_material_override/5 = SubResource("StandardMaterial3D_jlogf")
 surface_material_override/6 = SubResource("StandardMaterial3D_bgkpu")
 surface_material_override/7 = SubResource("StandardMaterial3D_66gm3")
+
+[node name="BarTable" type="StaticBody3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.0586, 0.531806, 2.68424)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BarTable"]
+mesh = ExtResource("9_sbb7e")
+surface_material_override/0 = SubResource("StandardMaterial3D_4rbme")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BarTable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00109863, 0.44493, -0.00115967)
+shape = SubResource("BoxShape3D_ehjax")
+
+[node name="BarTable2" type="StaticBody3D" parent="."]
+transform = Transform3D(-0.000703085, 0, 0.000711106, 0, 0.001, 0, -0.000711106, 0, -0.000703085, -4.0778, 0, 2.51462)
+
+[node name="Bartable" type="MeshInstance3D" parent="BarTable2"]
+mesh = ExtResource("11_ssgyd")
+surface_material_override/0 = SubResource("StandardMaterial3D_wg545")
+surface_material_override/1 = SubResource("StandardMaterial3D_2p3vw")
+surface_material_override/2 = SubResource("StandardMaterial3D_bmsvg")
+surface_material_override/3 = SubResource("StandardMaterial3D_vg8ou")
+surface_material_override/4 = SubResource("StandardMaterial3D_cp2k0")
+surface_material_override/5 = SubResource("StandardMaterial3D_6uqeh")
+surface_material_override/6 = SubResource("StandardMaterial3D_gnnpc")
+surface_material_override/7 = SubResource("StandardMaterial3D_3ixh7")
+surface_material_override/8 = SubResource("StandardMaterial3D_kmtp5")
+surface_material_override/9 = SubResource("StandardMaterial3D_ph0oc")
+surface_material_override/10 = SubResource("StandardMaterial3D_fwnfs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BarTable2"]
+transform = Transform3D(0.984847, 0, -0.173425, 0, 0.999998, 0, 0.173425, 0, 0.984847, -70.9755, 693.18, 75.7085)
+shape = SubResource("BoxShape3D_dx3pc")
+
+[node name="SteelFrame" type="StaticBody3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -1.13291, 0.287823, 2.6273)
+
+[node name="steel_frame_shelves_01_1k" parent="SteelFrame" instance=ExtResource("12_b3hev")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SteelFrame"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0589018, 10.7082, 0.00608063)
+shape = SubResource("BoxShape3D_6q2jk")
+
+[node name="Wine bottles" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.837564, 1.01678, 2.48249)
+
+[node name="wine_bottles_01_1k" parent="Wine bottles" instance=ExtResource("13_3cy48")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wine bottles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.304829, 0.168961, -0.00195313)
+shape = SubResource("BoxShape3D_eib60")
+
+[node name="blend_export" parent="." instance=ExtResource("14_kmavj")]
+transform = Transform3D(0.590887, 0, -0.806754, 0, 1, 0, 0.806754, 0, 0.590887, -4.01655, 1.12854, 2.92718)
+
+[node name="lemon_1k" parent="." instance=ExtResource("15_odym1")]
+transform = Transform3D(-0.0372018, -0.999308, 0, 0.999308, -0.0372018, 0, 0, 0, 1, 3.0992, 0.891791, -1.62942)
+
+[node name="blend_export2" parent="." instance=ExtResource("16_1mwyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.85364, -1.3903)
